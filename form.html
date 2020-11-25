@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <title> </title>
+
+  <head>
+    <script src="Libraries/p5.js"></script>
+    <script src="Libraries/p5.dom.min.js"></script>
+    <script src="Libraries/p5.sound.min.js"></script>
+    <script src="Libraries/matter.js"></script>
+    <script src="Libraries/p5.play.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCDLZF_a2x_gtYe0dpBvwSD9g0IkzMEGPY",
+        authDomain: "nh-manager-317be.firebaseapp.com",
+        databaseURL: "https://nh-manager-317be.firebaseio.com",
+        projectId: "nh-manager-317be",
+        storageBucket: "nh-manager-317be.appspot.com",
+        messagingSenderId: "33254771378",
+        appId: "1:33254771378:web:72a2b7110f4ed1d4d517ab"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+
+  </head>
+
+  <body>
+    <script src="main.js"></script>
+
+    <div class="container2">
+      <div class="formBox">
+        <div class="info">
+          <i class="fa fa-user"></i>
+          <input id="name" type="text" placeholder="Name">
+
+          <i class="fa fa-calendar"></i>
+          <input id="dob" type="date">
+
+          <div class="location">
+            <i class="fa fa-map-marker"></i>
+            <select id="state">
+              <option>Select State</option>
+              <option>Andhra Pradesh</option>
+              <option>Arunachal Pradesh</option>
+              <option>Assam</option>
+              <option>Bihar</option>
+              <option>Chhatishgarh</option>
+              <option>Goa</option>
+              <option>Gujarat</option>
+              <option>Haryana</option>
+              <option>Himachal Pradesh</option>
+              <option>Jharkhand</option>
+              <option>Karnataka</option>
+              <option>Kerala</option>
+              <option>Madhya Pradesh</option>
+              <option>Maharashtra</option>
+              <option>Manipur</option>
+              <option>Meghalaya</option>
+              <option>Mizoram</option>
+              <option>Nagaland</option>
+              <option>Odisha</option>
+              <option>Punjab</option>
+              <option>Rajasthan</option>
+              <option>Sikkim</option>
+              <option>Tamil Nadu</option>
+              <option>Telangana</option>
+              <option>Tripura</option>
+              <option>Uttar Pradesh</option>
+              <option>Uttarakhand</option>
+              <option>West Bengal</option>
+              <option>Delhi</option>
+              <option>Jammu and Kashmir</option>
+              <option>Ladakh</option>
+              <option>Dadra and Nagar Haveli</option>
+              <option>Daman and Diu</option>
+              <option>Puducherry</option>
+              <option>Chandigarh</option>
+              <option>Andaman and Nicobar Islands</option>
+              <option>Lakshadweep</option>
+            </select>
+          </div>
+
+          <div class="gender">
+            <select id="gender">
+              <option>Select Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Others</option>
+            </select>
+          </div>
+
+          <div class="btn">
+            <button type="button" onclick="loadHomeUpdate()">Start Using The App</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>

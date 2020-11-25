@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <title> </title>
+
+  <head>
+
+    <script src="Libraries/p5.js"></script>
+    <script src="Libraries/p5.dom.min.js"></script>
+    <script src="Libraries/p5.sound.min.js"></script>
+    <script src="Libraries/matter.js"></script>
+    <script src="Libraries/p5.play.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCDLZF_a2x_gtYe0dpBvwSD9g0IkzMEGPY",
+        authDomain: "nh-manager-317be.firebaseapp.com",
+        databaseURL: "https://nh-manager-317be.firebaseio.com",
+        projectId: "nh-manager-317be",
+        storageBucket: "nh-manager-317be.appspot.com",
+        messagingSenderId: "33254771378",
+        appId: "1:33254771378:web:72a2b7110f4ed1d4d517ab"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <script src="main.js"></script>
+
+    <div class="countainReport">
+      <div class="dangerType">
+        <div class="selDanger">
+          <select id="dangerSel">
+            <option>Select Danger Type</option>
+            <option>PotHole</option>
+            <option>Tree Fallen</option>
+            <option>Flood and Waterlogging</option>
+            <option>Broken Bridge</option>
+            <option>Broken Road</option>
+            <option>Accident</option>
+          </select>
+        </div>
+
+        <p> If you find any other danger write the danger below</p>
+        <p> Note: Don't write very temporary dangers like an animal dead etc.</p>
+        <div class="writeDanger">
+          <input id="dangerType" type="text" placeholder="Write Danger Type">
+        </div>
+      </div>
+
+      <div class="nh">
+        <input type="text" placeholder="NH id">
+      </div>
+
+      <div class="district">
+        <input type="text" placeholder="District">
+      </div>
+
+      <div class="locality">
+        <input type="text" placeholder="Locality">
+      </div>
+
+      <div class="image">
+        <input type="file" id="dangerImages" accept="image/*">
+        <label for="dangerImages">
+          <i class="material-icons">add_photo_alternate</i>
+          &nbsp; Upload Photo</label>
+      </div>
+
+      <div class="btnReport">
+        <button type="button" onclick="sendReport()">Send Report</button>
+      </div>
+    </div>
+
+    <div class="allBtns">
+      <div class="btnH">
+        <input type="image" src="Images/homebtn.png" onclick="home()" width="50" height="50">
+      </div>
+
+      <div class="achivments">
+        <input type="image" src="Images/achive.png" onclick="achive()" width="50" height="50">
+      </div>
+
+      <div class="profile">
+        <input type="image" src="Images/profile.png" onclick="profile()" width="50" height="50">
+      </div>
+
+      <div class="report">
+        <input type="image" src="Images/road.png" onclick="report()" width="50" height="50">
+      </div>
+
+      <div class="rate">
+        <input type="image" src="Images/rate.png" onclick="rate()" width="50" height="50">
+      </div>
+  </div>
+  </body>
+
+</html>

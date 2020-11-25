@@ -1,0 +1,386 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    display: block;
+}
+
+.formBox {
+    width: 360px;
+    padding-right: 5%;
+    padding-top: 12%;
+    margin: auto;
+    background: #ffffff;
+    flex: 1;
+}
+
+/* back trans */
+.login {
+    position: relative;
+    max-width: 360px;
+    margin: relative;
+    padding: 45px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(to right, #929191, #161616);
+}
+
+/* box design */
+.login .box input {
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    outline: 1;
+    width: 85%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #161616, #929191);
+}
+
+/* button design */
+.login .box button {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    border: 0;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 30px;
+    background: linear-gradient(to right, #161616, #929191);
+}
+
+.fa{
+    margin-right: 10px;
+}
+
+::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.notRegistered {
+    font-family: "Roboto", sans-serif;
+    color: #161616;
+    padding-left: 6%;
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* back trans */
+.signup {
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+    max-width: 360px;
+    margin: relative;
+    padding: 45px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(to right, #929191, #161616);
+}
+
+/* box design */
+.signup .box input {
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    outline: 1;
+    width: 85%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #161616, #929191);
+}
+
+/* button design */
+.signup .box button {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    border: 0;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 30px;
+    background: linear-gradient(to right, #161616, #929191);
+}
+
+.registered {
+    font-family: "Roboto", sans-serif;
+    color: #161616;
+    padding-left: 6%;
+}
+
+@media screen and (max-width:768px) {
+    .container2 {
+        flex-direction: column;
+    }
+}
+
+.location select {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to right, #161616, #929191), #000000;
+    color: #ffffff;
+    padding: 10px;
+    height: 50px;
+    width: 230px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+/* back trans */
+.info {
+    position: relative;
+    top: 1px;
+    background: rgba(0, 0, 0, 0.6);
+    max-width: 360px;
+    margin: relative;
+    margin-top: 0%;
+    padding: 45px;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(to right, #929191, #161616);
+}
+
+/* box design */
+.info input {
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    outline: 1;
+    width: 85%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #161616, #929191);
+}
+
+/* button design */
+.info .box button {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    border: 0;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 30px;
+    background: linear-gradient(to right, #161616, #929191);
+}
+
+.gender select {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to right, #161616, #929191), #000000;
+    color: #ffffff;
+    padding: 10px;
+    height: 50px;
+    width: 230px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 25px;
+    position: relative;
+}
+
+.btn button {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    border: 0;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 15px;
+    background: linear-gradient(to right, #161616, #929191);
+}
+
+.buttons {
+    border-radius: 5px;
+}
+
+.allBtns {
+    display: flex;
+    justify-content: center;
+}
+
+a:link {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+.areas {
+    color: #000000;
+}
+
+.link a:link {
+    color: #000000;
+}
+
+.link a:visited {
+    color: #000000;
+}
+
+.upload {
+    margin: 0;
+    padding: 0;
+    width: 34%;
+}
+
+.link {
+    position: relative;
+    left: 448px;
+    bottom: 44px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.image label {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to right, #161616, #929191);
+    color: #ffffff;
+    padding: 10px;
+    height: 35px;
+    width: 230px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selDanger select {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to right, #161616, #929191), #000000;
+    color: #ffffff;
+    padding: 10px;
+    height: 50px;
+    width: 230px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 25px;
+    position: relative;
+}
+
+.writeDanger input {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to right, #161616, #929191);
+    color: #ffffff;
+    padding: 10px;
+    height: 35px;
+    width: 230px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 25px;
+    position: relative;
+}
+
+.btnReport button {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to right, #161616, #929191), #000000;
+    color: #ffffff;
+    padding: 10px;
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 60px;
+    position: relative;
+}
+
+.district input {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to right, #161616, #929191);
+    color: #ffffff;
+    padding: 10px;
+    height: 35px;
+    width: 230px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 25px;
+    position: relative;
+}
+
+.nh input {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to right, #161616, #929191);
+    color: #ffffff;
+    padding: 10px;
+    height: 35px;
+    width: 230px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 25px;
+    position: relative;
+}
+
+.locality input {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to right, #161616, #929191);
+    color: #ffffff;
+    padding: 10px;
+    height: 35px;
+    width: 230px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 25px;
+    position: relative;
+}
+
+.editProfile button {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to right, #161616, #929191), #000000;
+    color: #ffffff;
+    padding: 10px;
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 60px;
+    position: relative;
+}
+
+.btnEdit button {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    border: 0;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 15px;
+    background: linear-gradient(to right, #161616, #929191);
+}
